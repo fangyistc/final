@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>服务流程</title>
+				<style>
+			#rcorners2 {
+    border-radius: 25px;
+    border: 2px ;
+		</style>	
+		<style>	
+			ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:black;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+li a:hover {
+    background-color:cadetblue;
+}
+.a{
+	background: #FFFFFF;
+}
+		</style>
+		
+		<style>
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+</style>
+	</head>
+	
+	<body style="width: 960px;">
+         <ul class="nav">
+                 
+<li style="margin-right: 130px;">
+    <a href="index.html" target="_blank" bosszone="dh_1">首页</a>
+  </li>
+    <li style="margin-right: 130px;">
+    <a href="2.html" target="_blank" bosszone="dh_2">关于我们</a>
+  </li>
+    <li style="margin-right: 130px;">
+       <a href="3.html" target="_blank" bosszone="dh_2">服务流程</a>
+  </li>
+      <li >
+       <a href="4.html" target="_blank" bosszone="dh_2">联系我们</a>
+  </li>
+               </ul>
+               		<!--
+        	作者：offline
+        	时间：2018-12-04
+        	描述：标题
+        -->
+<img src="img/7.jpg" width="960px" style="margin-top: 0px;" />
+		
+               <!--
+               	作者：offline
+               	时间：2018-12-04
+               	描述：返回顶部
+               -->
+               <button onclick="topFunction()" id="myBtn" title="回顶部">返回顶部</button>
+<script>
+// 当网页向下滑动 20px 出现"返回顶部" 按钮
+window.onscroll = function() {scrollFunction()};
+ 
+function scrollFunction() {console.log(121);
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+ 
+// 点击按钮，返回顶部
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+<!--
+	作者：offline
+	时间：2018-12-04
+	描述：流程图
+-->
+<img src="css/8.png" width="900px" height="800px"/>
+<br />
+<img src="css/9.png" width="900px" height="800px"/>
+<script>
+function changeImage()
+{
+	element=document.getElementById('myimagea')
+	if (element.src.match("10"))
+	{
+		element.src="img/11.png";
+	}
+	else
+	{
+		element.src="img/10.png";
+	}
+}
+</script>
+<img id="myimagea" onclick="changeImage()" src="img/10.png" width="900" height="600">
+<br />
+		
+	</body>
+</html>
